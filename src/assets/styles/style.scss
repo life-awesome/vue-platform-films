@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
 *:active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }

@@ -1,6 +1,9 @@
 <template>
   <container :value="80">
     <div v-if="filmDate" class="film-wrapper">
+      <span class="back-arrow">
+        <font-awesome-icon icon="arrow-left" size="2x" @click="$router.push('/')"/>
+      </span>
       <div class="banner">
         <img :src="filmDate.posterUrl" alt="">
         <span>{{}}</span>
@@ -38,7 +41,6 @@ export default {
   mounted() {
     (async () => {
       this.filmDate = await getFilmById(this.$route.params.id)
-      console.log(this.filmDate)
     })()
   },
   computed: {
@@ -54,4 +56,4 @@ export default {
 }
 </script>
 
-<style scoped src="./style.scss" lang="scss"/>
+<style lang="scss" scoped src="./style.scss"/>

@@ -1,0 +1,22 @@
+.card {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+  & p {
+    text-align: center;
+    &:first-child {
+      font-weight: 500;
+      position: absolute;
+      font-size: 20px;
+      color: aliceblue;
+      top: 10px;
+      left: 0;
+      right: 0;
+    }
+  }
+  & img {
+    max-width:100%;
+    max-height:100%;
+  }
+}
